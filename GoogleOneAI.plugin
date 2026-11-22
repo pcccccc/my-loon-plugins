@@ -4,7 +4,8 @@
 
 [Script]
 http-response ^https?:\/\/one\.google\.com script-path=https://raw.githubusercontent.com/pcccccc/my-loon-plugins/main/debug-probe.js, requires-body=true, tag=G1Probe, enable=true
+http-response ^https?:\/\/www\.baidu\.com script-path=https://raw.githubusercontent.com/pcccccc/my-loon-plugins/main/debug-probe.js, requires-body=true, tag=G1ProbeBaidu, enable=true
 http-response ^https?:\/\/one\.google\.com\/ai\? script-path=https://raw.githubusercontent.com/pcccccc/my-loon-plugins/main/GoogleOneAI.js, requires-body=true, tag=GoogleOneAI, timeout=10, enable=true
 
 [MITM]
-hostname = one.google.com
+hostname = one.google.com, www.baidu.com
