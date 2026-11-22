@@ -1,0 +1,9 @@
+#!name = G1 Body Rewrite
+#!desc = 个人 Loon 插件：指定页面的响应体文本替换（配套 GoogleOneAI.js）
+#!author = pcccccc
+
+[Script]
+http-response ^https?:\/\/one\.google\.com\/ai\? script-path=https://raw.githubusercontent.com/pcccccc/my-loon-plugins/main/GoogleOneAI.js, requires-body=true, tag=GoogleOneAI, timeout=10, enable=true
+
+[MITM]
+hostname = one.google.com
